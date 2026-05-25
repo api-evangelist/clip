@@ -1,0 +1,223 @@
+aid: clip
+name: Clip
+description: >-
+  Clip (legal name Payclip) is a Mexico City-based fintech and SMB acquirer
+  often described as the Square equivalent in Mexico. Founded in 2012, Clip
+  enables merchants of all sizes to accept card, contactless, and QR payments
+  through a family of mobile point-of-sale (mPOS) terminals — Clip Plus 2,
+  Clip Pro 2, Clip Ultra, Clip Total 3, and the high-volume Clip PinPad — as
+  well as Tap to Pay on iOS/Android smartphones, an online Checkout payment
+  gateway, payment links, and the Clip Cuenta digital business account with
+  same-day settlement and SMB loans. Clip operates the developer portal
+  developer.clip.mx, which publishes the Checkout Redirect, Checkout
+  Transparente, Transactions, Deposits, Refunds, and PinPad APIs along with
+  the Checkout Transparente SDK and a Terminal SDK for embedding card
+  acceptance into third-party POS apps. The company is backed by strategic
+  investors including American Express Ventures, Banorte, Capital Group, and
+  Morgan Stanley, and is consistently ranked among Mexico's top private
+  fintech employers.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Payments
+  - Acquiring
+  - SMB Payments
+  - Point of Sale
+  - mPOS
+  - Tap to Pay
+  - Card Acceptance
+  - Checkout
+  - Payment Gateway
+  - Payment Links
+  - Mexico
+  - Latin America
+  - Fintech
+  - PCI
+url: https://raw.githubusercontent.com/api-evangelist/clip/refs/heads/main/apis.yml
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
+apis:
+  - aid: clip:clip-checkout-redirect-api
+    name: Clip Checkout Redirect API
+    description: >-
+      Hosted checkout flow that redirects shoppers to a Clip-hosted payment
+      page to capture card data and complete the charge. Returns the
+      authorized payment back to the merchant via redirect plus a postback
+      webhook. Lowest PCI scope option for online merchants.
+    humanURL: https://developer.clip.mx/docs/api-de-checkout
+    tags:
+      - Payments
+      - Checkout
+      - Hosted Payment Page
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/docs/api-de-checkout
+      - type: Documentation
+        url: https://developer.clip.mx/reference/referencia-postback-webhook
+  - aid: clip:clip-checkout-transparente-api
+    name: Clip Checkout Transparente API
+    description: >-
+      Server-side payment processing that tokenizes card data via the Card
+      Token API and charges through the Payments API while keeping the
+      checkout experience entirely on the merchant's site. Supports 3DS
+      authentication, authorization + capture, USD payments, monthly
+      installments (MSI), and SPEI bank transfers.
+    humanURL: https://developer.clip.mx/docs/api-de-checkout-transparente
+    tags:
+      - Payments
+      - Checkout
+      - Tokenization
+      - 3DS
+      - SPEI
+      - MSI
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/docs/api-de-checkout-transparente
+      - type: Documentation
+        url: https://developer.clip.mx/reference/introduccion-al-checkout-transparente
+      - type: SDK
+        url: https://developer.clip.mx/reference/introduccion-al-sdk-de-checkout-transparente
+  - aid: clip:clip-transactions-api
+    name: Clip Transactions API
+    description: >-
+      Query individual transactions and list transactions across a date range
+      from a Clip merchant account — used for reconciliation across both
+      online Checkout and physical PinPad/POS sales.
+    humanURL: https://developer.clip.mx/docs/api-de-transacciones
+    tags:
+      - Payments
+      - Transactions
+      - Reporting
+      - Reconciliation
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/docs/api-de-transacciones
+      - type: Documentation
+        url: https://developer.clip.mx/docs/conciliacion-de-transacciones-apis-1
+  - aid: clip:clip-deposits-api
+    name: Clip Deposits API
+    description: >-
+      Retrieve detailed deposit reports and deposit summaries for the
+      merchant's Clip Cuenta over a date window (up to 90 days). Use to
+      reconcile payouts to the merchant's bank against captured transactions.
+    humanURL: https://developer.clip.mx/docs/api-de-depositos
+    tags:
+      - Payments
+      - Deposits
+      - Settlements
+      - Reporting
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/docs/api-de-depositos
+  - aid: clip:clip-refunds-api
+    name: Clip Refunds API
+    description: >-
+      Create full or partial refunds against previously approved Clip
+      payments and query refund status. Supports both Checkout and PinPad
+      sourced transactions.
+    humanURL: https://developer.clip.mx/reference/introduccion-api-de-reembolsos
+    tags:
+      - Payments
+      - Refunds
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/reference/introduccion-api-de-reembolsos
+  - aid: clip:clip-pinpad-api
+    name: Clip PinPad API
+    description: >-
+      Drive a Clip PinPad device (fixed, high-volume terminal) from a
+      merchant's own POS software — initiate card-present sales, query
+      device status, capture authorizations, and reconcile against the
+      Transactions API.
+    humanURL: https://developer.clip.mx/reference/introducci%C3%B3n-a-la-api-de-pinpad
+    tags:
+      - Payments
+      - Point of Sale
+      - PinPad
+      - Card Present
+      - Hardware
+    properties:
+      - type: Documentation
+        url: https://developer.clip.mx/reference/introducci%C3%B3n-a-la-api-de-pinpad
+      - type: SDK
+        url: https://developer.clip.mx/reference/introducci%C3%B3n-al-sdk-terminal
+      - type: SDK
+        url: https://github.com/ClipMX/mobile.android.blaze.pinpad.sdk
+common:
+  - type: Website
+    url: https://www.clip.mx
+  - type: Portal
+    url: https://www.payclip.com
+  - type: DeveloperPortal
+    url: https://developer.clip.mx
+  - type: GettingStarted
+    url: https://developer.clip.mx/docs/primeros-pasos
+  - type: Documentation
+    url: https://developer.clip.mx/docs/getting-started
+  - type: Documentation
+    url: https://developer.clip.mx/reference
+  - type: Documentation
+    url: https://developer.clip.mx/llms.txt
+    name: llms.txt index
+  - type: FAQ
+    url: https://developer.clip.mx/page/preguntas-frecuentes
+  - type: Forum
+    url: https://developer.clip.mx/discuss
+  - type: Webhooks
+    url: https://developer.clip.mx/reference/referencia-postback-webhook
+  - type: Compliance
+    url: https://developer.clip.mx/reference/pci-compliance
+  - type: Support
+    url: https://ayuda.clip.mx/s/
+  - type: Shop
+    url: https://shop.clip.mx
+  - type: Product
+    url: https://www.clip.mx/clip-ultra
+  - type: Product
+    url: https://www.clip.mx/clip-pro-2
+  - type: Product
+    url: https://www.clip.mx/clip-total-3
+  - type: Product
+    url: https://www.clip.mx/clip-plus-2
+  - type: Product
+    url: https://www.clip.mx/clip-pinpad
+  - type: Product
+    url: https://www.clip.mx/checkout
+  - type: Product
+    url: https://www.clip.mx/link-de-cobro
+  - type: Product
+    url: https://www.clip.mx/clip-cuenta
+  - type: Product
+    url: https://www.clip.mx/empresas
+  - type: Blog
+    url: https://blog.clip.mx
+  - type: Careers
+    url: https://careers.clip.mx
+  - type: ContactEmail
+    url: mailto:corporate@payclip.com
+  - type: PrivacyPolicy
+    url: https://www.clip.mx/privacidad
+  - type: TermsOfService
+    url: https://www.clip.mx/terminos
+  - type: GitHubOrganization
+    url: https://github.com/ClipMX
+  - type: GitHubOrganization
+    url: https://github.com/Payclip
+  - type: Twitter
+    url: https://twitter.com/clip_mx
+  - type: LinkedIn
+    url: https://mx.linkedin.com/company/payclip
+  - type: Facebook
+    url: https://www.facebook.com/clipmx
+  - type: Instagram
+    url: https://www.instagram.com/clip.mx/
+  - type: YouTube
+    url: https://www.youtube.com/channel/UCWihkxbz5A5xUc8QLnfkEOQ
+  - type: TikTok
+    url: https://www.tiktok.com/@clip.mx
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
