@@ -78,7 +78,7 @@ apis:
         url: https://developer.clip.mx/docs/api-de-checkout-transparente
       - type: Documentation
         url: https://developer.clip.mx/reference/introduccion-al-checkout-transparente
-      - type: SDK
+      - type: SDKs
         url: https://developer.clip.mx/reference/introduccion-al-sdk-de-checkout-transparente
   - aid: clip:clip-transactions-api
     name: Clip Transactions API
@@ -142,9 +142,9 @@ apis:
     properties:
       - type: Documentation
         url: https://developer.clip.mx/reference/introducci%C3%B3n-a-la-api-de-pinpad
-      - type: SDK
+      - type: SDKs
         url: https://developer.clip.mx/reference/introducci%C3%B3n-al-sdk-terminal
-      - type: SDK
+      - type: SDKs
         url: https://github.com/ClipMX/mobile.android.blaze.pinpad.sdk
 common:
   - type: Website
@@ -164,7 +164,7 @@ common:
     name: llms.txt index
   - type: FAQ
     url: https://developer.clip.mx/page/preguntas-frecuentes
-  - type: Forum
+  - type: Forums
     url: https://developer.clip.mx/discuss
   - type: Webhooks
     url: https://developer.clip.mx/reference/referencia-postback-webhook
