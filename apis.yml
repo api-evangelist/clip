@@ -147,6 +147,8 @@ apis:
       - type: SDKs
         url: https://github.com/ClipMX/mobile.android.blaze.pinpad.sdk
 common:
+  - type: DomainSecurity
+    url: security/clip-domain-security.yml
   - type: Website
     url: https://www.clip.mx
   - type: Portal
