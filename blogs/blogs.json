@@ -2,13 +2,11 @@
   "repo": "clip",
   "feeds": [
     {
-      "source": "https://blog.clip.mx",
-      "feed_url": "",
-      "saved": 1,
-      "method": "agent-scrape"
+      "source": "https://www.clip.mx/empresas",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:32:37Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 7,
-  "agent_pulled": "2026-06-27"
+  "agent_pulled": "2026-07-04"
 }
