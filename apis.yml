@@ -35,6 +35,21 @@ tags:
   - Payments
   - Acquiring
   - SMB Payments
+  - Point-of-Sale
+  - mPOS
+  - Tap to Pay
+  - Card Acceptance
+  - Checkout
+  - Payment Gateway
+  - Payment Links
+  - Mexico
+  - Latin America
+  - Fintech
+  - PCI
+tags_raw:
+  - Payments
+  - Acquiring
+  - SMB Payments
   - Point of Sale
   - mPOS
   - Tap to Pay
@@ -100,6 +115,11 @@ apis:
     humanURL: https://developer.clip.mx/docs/api-de-transacciones
     tags:
       - Payments
+      - Transaction
+      - Reporting
+      - Reconciliation
+    tags_raw:
+      - Payments
       - Transactions
       - Reporting
       - Reconciliation
@@ -116,6 +136,11 @@ apis:
       reconcile payouts to the merchant's bank against captured transactions.
     humanURL: https://developer.clip.mx/docs/api-de-depositos
     tags:
+      - Payments
+      - Deposits
+      - Settlement
+      - Reporting
+    tags_raw:
       - Payments
       - Deposits
       - Settlements
@@ -145,6 +170,12 @@ apis:
       Transactions API.
     humanURL: https://developer.clip.mx/reference/introducci%C3%B3n-a-la-api-de-pinpad
     tags:
+      - Payments
+      - Point-of-Sale
+      - PinPad
+      - Card Present
+      - Hardware
+    tags_raw:
       - Payments
       - Point of Sale
       - PinPad
