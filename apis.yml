@@ -107,6 +107,13 @@ apis:
       - Payments
       - Checkout
       - Tokenization
+      - 3D
+      - SPEI
+      - MSI
+    tags_raw:
+      - Payments
+      - Checkout
+      - Tokenization
       - 3DS
       - SPEI
       - MSI
