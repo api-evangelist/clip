@@ -1,4 +1,4 @@
-# clip
+# Clip
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Clip (Payclip) — Mexico-based SMB payments acquirer and mPOS / Checkout API provider
+Clip (legal name Payclip) is a Mexico City-based fintech and SMB acquirer often described as the Square equivalent in Mexico. Founded in 2012, Clip enables merchants of all sizes to accept card, contactless, and QR payments through a family of mobile point-of-sale (mPOS) terminals — Clip Plus 2, Clip Pro 2, Clip Ultra, Clip Total 3, and the high-volume Clip PinPad — as well as Tap to Pay on iOS/Android smartphones, an online Checkout payment gateway, payment links, and the Clip Cuenta digital business account with same-day settlement and SMB loans. Clip operates the developer portal developer.clip.mx, which publishes the Checkout Redirect, Checkout Transparente, Transactions, Deposits, Refunds, and PinPad APIs along with the Checkout Transparente SDK and a Terminal SDK for embedding card acceptance into third-party POS apps. The company is backed by strategic investors including American Express Ventures, Banorte, Capital Group, and Morgan Stanley, and is consistently ranked among Mexico's top private fintech employers.
+
+**Areas:** Payments · Acquiring · SMB Payments · Point-of-Sale · mPOS · Tap to Pay · Card Acceptance · Checkout · Payment Gateway · Payment Links · Mexico · Latin America
+
+## Clip on APIs.io
+
+Everything profiled for Clip is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clip/](https://apis.io/providers/clip/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [Clip Checkout Redirect API](https://apis.io/apis/clip/clip-checkout-redirect-api/) — Hosted checkout flow that redirects shoppers to a Clip-hosted payment page to capture card data and complete the charge. Returns the authorized payment back…
+- [Clip Checkout Transparente API](https://apis.io/apis/clip/clip-checkout-transparente-api/) — Server-side payment processing that tokenizes card data via the Card Token API and charges through the Payments API while keeping the checkout experience…
+- [Clip Transactions API](https://apis.io/apis/clip/clip-transactions-api/) — Query individual transactions and list transactions across a date range from a Clip merchant account — used for reconciliation across both online Checkout…
+- [Clip Deposits API](https://apis.io/apis/clip/clip-deposits-api/) — Retrieve detailed deposit reports and deposit summaries for the merchant's Clip Cuenta over a date window (up to 90 days). Use to reconcile payouts to the…
+- [Clip Refunds API](https://apis.io/apis/clip/clip-refunds-api/) — Create full or partial refunds against previously approved Clip payments and query refund status. Supports both Checkout and PinPad sourced transactions.
+- [Clip PinPad API](https://apis.io/apis/clip/clip-pinpad-api/) — Drive a Clip PinPad device (fixed, high-volume terminal) from a merchant's own POS software — initiate card-present sales, query device status, capture…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Clip Domain Security](https://apis.io/security/clip/clip-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.clip.mx)
+- [Documentation](https://developer.clip.mx/docs/getting-started)
+- [Getting started](https://developer.clip.mx/docs/primeros-pasos)
+- [Support](https://ayuda.clip.mx/s/)
+- [Blog](https://blog.clip.mx)
+- [Compliance](https://developer.clip.mx/reference/pci-compliance)
+- [Terms of service](https://www.clip.mx/terminos)
+- [Privacy policy](https://www.clip.mx/privacidad)
+- [GitHub](https://github.com/ClipMX)
+
+## API Evangelist rating
+
+**Kin Score 21.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 6.6 |
+| Developer ergonomics | 44.0 |
+| Access clarity | 28.9 |
+
+**Agent readiness 3.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.0** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/clip/](https://apis.io/providers/clip/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Clip: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clip/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
